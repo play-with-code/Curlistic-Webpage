@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main,.products{
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+    font-style: normal
+}
+.main{
+    height: 100vh;
+}
+nav{
+    background-color: maroon;
+}
+
+.logo:hover{
+    color: yellow;
+}
+.btn_self{
+    background-color: #fff;
+}
+.btn_self:hover{
+    background-color: maroon;
+}
+.search_bar{
+    background: rgba(128, 0, 0, 0.575);
+}
+.main_container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('jwell.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+.main_heading{
+    text-align: center;
+    font-size: 50px;
+    
+    color: wheat;
+}
+.products{
+    height: 130vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('section2.jfif');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color:rgba(255, 38, 0, 0.877); */
+
+}
+.products h1{
+  padding-top: 50px;
+    font-size: 40px;
+    color: wheat;
+    font-weight: bold;
+    text-align: justify;
+    
+}
+.items1{
+    margin-top: 50px;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.card{
+    width: 18rem;
+    background-color: transparent;
+    transition: 0.9s;
+    border: 2px solid #fff;
+    font-family: "Cambo", serif;
+    /* height: 20rem; */
+}
+.card p{
+    font-size: 20px;
+    font-weight: 700;
+    color: wheat;
+}
+.card:hover{
+    scale: 1.1;
+}
+#necklace{
+    height: 290px;
+    
+}
+
+
+.footer{
+    height: 50vh;
+  background-color:maroon;
+  display: flex;
+  justify-content: space-between;
+  color: wheat;
+  font-family: "Cambo", serif;
+}
+.footer a{
+    margin-top: 10px;
+}
+.footer a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.7s;
+}
+.footer a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+.footer_container,.footer_items2{
+    margin: 20px;
+    width: 90%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+.footer_links,.footer_item{
+    display: flex;
+    flex-direction: column;
+}
+@media(min-width:400px) and (max-width:500px){
+    .main{
+        height: 100vh;
+    }
+    .main_container{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('jwell.jpg');
+        background-attachment: fixed;
+        background-size:100% 100%;
+        background-position: center;
+        display:flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .products{
+        height: 303vh;
+    }
+  
+  .products h1{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+    .items1{
+        margin-top: 50px;
+        /* background-color: black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: center; */
+        gap: 50px;
+    }
+    .footer{
+        width: 100%;
+        height:74vh ;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .footer h3{
+        font-size: 20px;
+    }
+    .footer_container{
+        display: flex;
+        justify-content: space-between;
+      
+        width: 100%;
+        margin: 10px;
+    }
+    .footer_items2{
+    
+        display: flex;
+        justify-content: space-between;
+      /* background-color: beige; */
+        width: 85%;
+        margin-top: 30px;
+    }
+    .Contact,.footer_links{
+        /* background-color: black; */
+         margin-left: 50px;
+    }
+    .follow,.footer_item{
+        margin-right: 70px;
+    }
+}
+
+
+@media(min-width:500px) and (max-width:800px){
+    .main{
+        height: 100vh;
+    }
+    .main_container{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('jwell.jpg');
+        background-attachment: fixed;
+        background-size:100% 100%;
+        background-position: center;
+        display:flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .products{
+        height: 334vh;
+    }
+  
+  .products h1{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+    .items1{
+        margin-top: 50px;
+        /* background-color: black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: center; */
+        gap: 50px;
+    }
+    .card{
+        height: 592px;
+        width: 25rem;
+    }
+   #neclace_card{
+    height: 470px;
+   }
+}
