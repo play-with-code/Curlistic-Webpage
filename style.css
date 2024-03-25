@@ -30,23 +30,23 @@ nav{
     position: relative;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('jwell.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('jwell.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
     display:flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
 
 }
 .main_heading{
     text-align: center;
     font-size: 50px;
-    
+    font-weight: 700;
     color: wheat;
 }
 .products{
-    height: 130vh;
+    height: 160vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('section2.jfif');
     background-size: 100% 100%;
     background-attachment: fixed;
@@ -96,12 +96,13 @@ nav{
 
 
 .footer{
-    height: 50vh;
+    /* height: 51vh; */
   background-color:maroon;
   display: flex;
   justify-content: space-between;
   color: wheat;
   font-family: "Cambo", serif;
+ 
 }
 .footer a{
     margin-top: 10px;
@@ -109,17 +110,18 @@ nav{
 .footer a{
     text-decoration: none;
     color: wheat;
-    font-size: 15px;
+    /* font-size: 15px; */
     font-weight: bold;
     transition: 0.7s;
 }
+
 .footer a:hover{
     text-decoration: underline;
     color: yellow;
 }
-.footer_container,.footer_items2{
+.footer_container{
     margin: 20px;
-    width: 90%;
+    width: 100%;
     /* background-color: orange; */
     display: flex;
     justify-content: space-around;
@@ -129,7 +131,75 @@ nav{
     display: flex;
     flex-direction: column;
 }
-@media(min-width:400px) and (max-width:500px){
+
+
+
+@media(min-width:300px) and (max-width:400px){
+    .main{
+        height: 73vh;
+    }
+    .main_container{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('jwell.jpg');
+        background-attachment: fixed;
+        background-size:100% 100%;
+        background-position: center;
+        display:flex;
+        /* justify-content: center; */
+        align-items: center;
+    }
+  .main_container h1{
+    font-weight: 400;
+  }
+    .products{
+        height: 227vh;
+    }
+    .card {
+        height: 437px;
+        width: 16rem;
+    }
+  
+  .products h1{
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+    .items1{
+        margin-top: 50px;
+        /* background-color: black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: center; */
+        gap: 50px;
+    }
+    
+   #neclace_card{
+    height: 470px;
+   }
+   footer{
+    height: 33vh;
+    display: flex;
+    justify-content: space-between;
+   
+    /* flex-direction: column; */
+   }
+   footer h3{
+    font-size: 15px;
+}
+ footer a{
+    font-size: 9px;
+ }
+   
+   .footer_items2{
+    margin-left: 0;
+   }
+}
+
+@media(min-width:401px) and (max-width:500px){
     .main{
         height: 100vh;
     }
@@ -147,7 +217,7 @@ nav{
     }
 
     .products{
-        height: 303vh;
+        height: 320vh;
     }
   
   .products h1{
@@ -167,7 +237,7 @@ nav{
     }
     .footer{
         width: 100%;
-        height:74vh ;
+        height:79vh ;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
@@ -182,65 +252,48 @@ nav{
         width: 100%;
         margin: 10px;
     }
-    .footer_items2{
+    /* .footer_items2{
     
         display: flex;
         justify-content: space-between;
-      /* background-color: beige; */
+      background-color: beige;
         width: 85%;
         margin-top: 30px;
-    }
-    .Contact,.footer_links{
-        /* background-color: black; */
-         margin-left: 50px;
-    }
-    .follow,.footer_item{
-        margin-right: 70px;
-    }
+    } */
+    
+    
 }
 
-
-@media(min-width:500px) and (max-width:800px){
-    .main{
-        height: 100vh;
-    }
+@media(min-width:600px) and (max-width:768px){
     .main_container{
-        position: relative;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('jwell.jpg');
-        background-attachment: fixed;
-        background-size:100% 100%;
-        background-position: center;
-        display:flex;
-        /* justify-content: center; */
-        align-items: center;
+        background-size: 100% 100%;
     }
-
     .products{
-        height: 334vh;
-    }
-  
-  .products h1{
-    font-size: 40px;
-    font-weight: 300;
-    text-align: center;
-  }
-
-    .items1{
-        margin-top: 50px;
-        /* background-color: black; */
+        height:201vh;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        /* align-items: center; */
-        gap: 50px;
+        /* overflow: scroll; */
+        /* justify-content: center; */
+
+    }
+    .products h1{
+        text-align: center;
     }
     .card{
-        height: 592px;
+        height: 565px;
         width: 25rem;
     }
-   #neclace_card{
-    height: 470px;
-   }
+       .items1{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        /* overflow: hidden; */
+        height: 31vh;
+
+    }
+    .footer a{
+        font-size: 11px;
+    }
 }
